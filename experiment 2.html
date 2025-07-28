@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Hosting Page</title>
+    <p style="text-align: center; font-style: italic; color: #555;"></p>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">🎙️ My Podcast Hub</h1>
+        <p style="text-align: center; font-style: italic; color: #555;">
+            “Voice your vision. Stream your story.”
+        </p>
+        <div style="text-align: center;">
+        <img src="./pictures/WhatsApp Image 2025-07-28 at 11.41.33.jpeg" alt="podcast banner" width="50%" height="50%">
+    </div>
+    </header>
+    <section style="text-align:center;">
+        <h2>Podcast Highlights</h2>
+        <video width="400" controls>
+            <source src="./pictures/video1.mp4" type="video/mp4">
+        
+            
+        </video>
+        <br><br>
+
+
+    <!-- Podcast Media -->
+    <section style="text-align:center;">
+        <h2>Latest Podcast Episode</h2>
+        <audio controls>
+            <source src="./pictures/audio1 (1).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p><strong>Episode 1:</strong> Introduction to Podcasting</p>
+    </section>
+
+    <!-- Skills / Progress -->
+    <section>
+        <h2>Podcast Publishing Progress</h2>
+        <label>Recording</label><progress value="100" max="100"></progress><br>
+        <label>Editing</label><progress value="75" max="100"></progress><br>
+        <label>Uploading</label><progress value="50" max="100"></progress><br>
+    </section>
+
+    <!-- Podcast Submission Form -->
+    <form action="/submit_podcast" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Host Details</legend>
+            Host Name: <input type="text" name="host_name" required><br><br>
+            Channel Name: <input type="text" name="channel_name" required><br><br>
+            Reg No: <input type="text" name="regno" value="URK23CS1282"><br><br>
+            Gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+            DOB: <input type="date" name="dob"><br><br>
+            Upload Profile Picture: <input type="file" name="photo" accept="image/*" onchange="previewImage(event)"><br><br>
+            <img id="preview" src="#" alt="Preview" style="display:none;" width="100">
+        </fieldset>
+
+        <fieldset>
+            <legend>Episode Details</legend>
+            Episode Title: <input type="text" name="ep_title" required><br><br>
+            Episode Category:
+            <select name="category">
+                <option value="Tech">Technology</option>
+                <option value="Music">Music</option>
+                <option value="Education">Education</option>
+                <option value="Lifestyle">Lifestyle</option>
+            </select><br><br>
+            Date: <input type="date" name="ep_date"><br><br>
+            Upload Episode (MP3): <input type="file" name="audio_file"><br><br>
+            Description:<br>
+            <textarea name="desc" rows="4" cols="40"></textarea><br><br>
+            Contact Email: <input type="email" name="email"><br><br>
+            Website URL: <input type="url" name="url"><br><br>
+            <input type="checkbox" name="verify"> I agree to terms<br><br>
+            <input type="submit" value="Submit Podcast">
+        </fieldset>
+    </form>
+
+    <!-- Embedded Spotify or podcast platform -->
+    <section>
+        <h2>Explore on Spotify</h2>
+        <img src="./pictures/cover.jpeg" alt="Explore on Spotify" style="display: block; margin: 70px auto;" width="500">
+    </section>
+
+    <!-- Map Section -->
+    <section>
+        <h3>Visit Our Studio</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.231234!2d76.9987!3d10.9642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8574526a9e64f%3A0x4d6c18e324b634a!2sKarunya%20University!5e0!3m2!1sen!2sin!4v1620000000000"
+            width="400"
+            height="300"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align:center;">
+            © 2020-2025. URK23CS1282 - Web Technology Lab Batch 1. All Rights Reserved.<br>
+            Hosted on: <a href="https://your-github-username.github.io/your-repo-name/" target="_blank">GitHub Page</a>
+        </p>
+    </footer>
+</body>
+</html>
+
