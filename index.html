@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PodVerse - Soft Aesthetic Podcast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('bg2.jpeg'); /* fixed path */
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #dd5c9f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 6px 12px;
+    }
+
+    nav a:hover {
+      background-color: #ffd4eb;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .featured {
+      text-align: center;
+    }
+
+    .featured img {
+      width: 200px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .form-section {
+      margin-top: 40px;
+    }
+
+    fieldset {
+      border: 2px solid #ffa6c9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #dd5c9f;
+    }
+
+    label, input, select, textarea {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    input, select, textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #dd5c9f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #bf4b87;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      background-color: #dd5c9f;
+      margin-top: 50px;
+      border-radius: 0 0 10px 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="cover.jpeg" alt="Podcast Cover"> <!-- fixed path -->
+    <h1>PodVerse</h1>
+    <p>✨ A Soft-Pink Podcast Experience ✨</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Episodes</a>
+    <a href="#">Guests</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section class="featured">
+      <h2>🎧 Featured Episode: Self Love</h2>
+      <audio controls>
+        <source src="audio1.mp3" type="audio/mpeg"> <!-- fixed path -->
+        Your browser does not support the audio element.
+      </audio>
+      <p>In this episode, we talk about embracing yourself, flaws and all.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>📝 Subscribe to Our Podcast</h2>
+      <form action="/subscribe" method="get">
+        <fieldset>
+          <legend>Subscriber Info</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="platform">Preferred Platform:</label>
+          <select id="platform" name="platform">
+            <option value="spotify">Spotify</option>
+            <option value="apple">Apple Podcasts</option>
+            <option value="youtube">YouTube</option>
+            <option value="other">Other</option>
+          </select>
+
+          <input type="submit" value="Subscribe">
+        </fieldset>
+      </form>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h2>🎬 Watch Our Trailer</h2>
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 PodVerse by URK23CS1283 🎤 | All Rights Reserved
+  </footer>
+
+</body>
+</html>
